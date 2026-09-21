@@ -1,0 +1,52 @@
+.food-card h3 {
+  margin-bottom: 8px;
+}
+
+.food-card p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.food-card.limit {
+  border-color: rgba(214, 69, 69, 0.35);
+  background: var(--danger-soft);
+}
+
+.food-card.limit h3 {
+  color: var(--danger);
+}
+
+.table-card {
+  padding: 0;
+  overflow-x: auto;
+}
+
+.nutrient-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.nutrient-table th,
+.nutrient-table td {
+  text-align: left;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.nutrient-table th {
+  color: var(--text-muted);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.nutrient-table tr:last-child td {
+  border-bottom: none;
+}
+
+.nutrient-name {
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+}

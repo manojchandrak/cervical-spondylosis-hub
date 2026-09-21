@@ -1,0 +1,72 @@
+.locate-card {
+  margin-top: 24px;
+}
+
+.locate-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.or-text {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+.location-input {
+  flex: 1 1 220px;
+  padding: 11px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.92rem;
+}
+
+.location-input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.locate-error {
+  color: var(--danger);
+  font-size: 0.85rem;
+  margin: 12px 0 0;
+}
+
+.locate-ok {
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin: 12px 0 0;
+}
+
+.category-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 28px rgba(28, 35, 51, 0.1);
+}
+
+.category-icon {
+  font-size: 1.8rem;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.category-card h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.category-cta {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--accent);
+}

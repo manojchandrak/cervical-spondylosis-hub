@@ -1,0 +1,217 @@
+.anim-wrap {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0 4px;
+}
+
+.anim {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+}
+
+.torso {
+  fill: var(--accent-soft);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.neck {
+  fill: var(--accent-soft);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.head {
+  fill: var(--accent-soft);
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.nose {
+  fill: var(--accent);
+}
+
+.hand {
+  fill: var(--accent-2-soft);
+  stroke: var(--accent-2);
+  stroke-width: 2;
+}
+
+/* Chin tuck: head + neck glide straight back */
+.chin-tuck-el {
+  animation: chin-tuck 2.4s ease-in-out infinite;
+}
+@keyframes chin-tuck {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-16px, 2px);
+  }
+}
+
+/* Neck rotation: head turns left/right */
+.rotation-el {
+  animation: neck-rotate 3.2s ease-in-out infinite;
+  transform-origin: 80px 92px;
+}
+@keyframes neck-rotate {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+}
+
+/* Lateral stretch: ear toward shoulder */
+.lateral-el {
+  animation: lateral-tilt 3s ease-in-out infinite;
+  transform-origin: 79px 100px;
+}
+@keyframes lateral-tilt {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+}
+
+/* Flexion / extension: chin to chest, then look up */
+.flex-ext-el {
+  animation: flex-extend 3s ease-in-out infinite;
+  transform-origin: 74px 92px;
+}
+@keyframes flex-extend {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(24deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-18deg);
+  }
+}
+
+/* Shoulder rolls: small circular path */
+.shoulder-left-el,
+.shoulder-right-el {
+  fill: var(--accent);
+  opacity: 0.85;
+  animation: shoulder-roll 2.6s ease-in-out infinite;
+}
+@keyframes shoulder-roll {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-3px, -8px);
+  }
+  50% {
+    transform: translate(0, -2px);
+  }
+  75% {
+    transform: translate(3px, 4px);
+  }
+}
+
+/* Scapular retraction: shoulder blades squeeze toward spine */
+.blade-left-el {
+  fill: var(--accent);
+  opacity: 0.85;
+  animation: blade-left 2.4s ease-in-out infinite;
+}
+.blade-right-el {
+  fill: var(--accent);
+  opacity: 0.85;
+  animation: blade-right 2.4s ease-in-out infinite;
+}
+@keyframes blade-left {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(8px);
+  }
+}
+@keyframes blade-right {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-8px);
+  }
+}
+
+/* Isometric resistance: hand presses against forehead */
+.hand-el {
+  animation: press 1.8s ease-in-out infinite;
+}
+@keyframes press {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-6px, 2px);
+  }
+}
+
+/* Levator scapulae stretch: turn + drop into the stretch, hold, release */
+.levator-el {
+  animation: levator-hold 3.6s ease-in-out infinite;
+  transform-origin: 73px 96px;
+}
+@keyframes levator-hold {
+  0%,
+  12% {
+    transform: rotate(0deg);
+  }
+  50%,
+  80% {
+    transform: rotate(36deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chin-tuck-el,
+  .rotation-el,
+  .lateral-el,
+  .flex-ext-el,
+  .shoulder-left-el,
+  .shoulder-right-el,
+  .blade-left-el,
+  .blade-right-el,
+  .hand-el,
+  .levator-el {
+    animation: none !important;
+  }
+}

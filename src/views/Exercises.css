@@ -1,0 +1,111 @@
+.player-card {
+  margin: 24px 0 40px;
+}
+
+.player-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.player-head h2 {
+  margin: 0;
+}
+
+.player-total {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.progress-track {
+  height: 6px;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.player-body {
+  text-align: center;
+  padding: 8px 0 4px;
+}
+
+.player-body h3 {
+  font-size: 1.4rem;
+  margin: 4px 0 10px;
+}
+
+.player-body p {
+  max-width: 480px;
+  margin: 0 auto 18px;
+}
+
+.timer {
+  font-size: 2.6rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 6px;
+  font-variant-numeric: tabular-nums;
+}
+
+.up-next {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 20px !important;
+}
+
+.player-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.player-body.finished h3 {
+  color: var(--accent-2);
+}
+
+.category-block {
+  margin-top: 36px;
+}
+
+.category-block h2 {
+  margin-bottom: 14px;
+}
+
+.exercise-card {
+  height: 100%;
+}
+
+.exercise-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.exercise-head h3 {
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.duration {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.exercise-card p {
+  font-size: 0.9rem;
+  margin: 0;
+}

@@ -1,0 +1,65 @@
+.timeline {
+  display: grid;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.timeline-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.timeline-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.timeline-icon {
+  font-size: 1.6rem;
+}
+
+.timeline-head h3 {
+  margin: 0;
+}
+
+.timeline-card ul {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.timeline-card li {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+}
+
+.table-card {
+  padding: 0;
+  overflow-x: auto;
+}
+
+.ergo-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.ergo-table td {
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.ergo-table tr:last-child td {
+  border-bottom: none;
+}
+
+.ergo-label {
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+  width: 200px;
+}

@@ -1,0 +1,52 @@
+.quote-card {
+  margin-top: 24px;
+  text-align: center;
+  padding: 44px 32px;
+  background: linear-gradient(135deg, var(--accent-2-soft), var(--surface) 70%);
+  border-color: var(--accent-2);
+}
+
+.quote-mark {
+  font-size: 3.5rem;
+  line-height: 1;
+  color: var(--accent-2);
+  opacity: 0.5;
+  margin: 0;
+  font-family: Georgia, serif;
+}
+
+.quote-card blockquote {
+  margin: 0 auto 16px;
+  max-width: 620px;
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.quote-author {
+  color: var(--accent-2);
+  font-weight: 700;
+  margin-bottom: 24px !important;
+}
+
+.quote-mini {
+  transition: border-color 0.15s ease;
+}
+
+.quote-mini.active {
+  border-color: var(--accent-2);
+  background: var(--accent-2-soft);
+}
+
+.quote-mini p {
+  font-size: 0.94rem;
+  margin: 0 0 10px;
+  color: var(--text);
+}
+
+.quote-mini-author {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-weight: 600;
+}
