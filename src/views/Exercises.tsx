@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import ExerciseAnimation from '../components/ExerciseAnimation'
-import ExercisePhoto from '../components/ExercisePhoto'
+import ExerciseVideo from '../components/ExerciseVideo'
 import './Exercises.css'
 
 interface Exercise {
@@ -195,7 +195,7 @@ export default function Exercises() {
               </span>
               <h3>{currentExercise.name}</h3>
               <div className="player-media">
-                <ExercisePhoto id={currentExercise.id} />
+                <ExerciseVideo id={currentExercise.id} />
                 <ExerciseAnimation id={currentExercise.id} />
               </div>
               <p>{currentExercise.instructions}</p>
@@ -244,7 +244,7 @@ export default function Exercises() {
                       <span className="duration">{ex.seconds}s</span>
                     </div>
                     <div className="card-media">
-                      <ExercisePhoto id={ex.id} />
+                      <ExerciseVideo id={ex.id} />
                       <ExerciseAnimation id={ex.id} />
                     </div>
                     <p>{ex.instructions}</p>

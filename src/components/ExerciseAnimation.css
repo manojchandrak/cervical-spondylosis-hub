@@ -10,32 +10,59 @@
   height: auto;
 }
 
-.torso {
-  fill: var(--accent-soft);
-  stroke: var(--accent);
-  stroke-width: 2;
+.stage {
+  fill: url(#stageGrad);
+}
+
+.torso,
+.arm {
+  fill: url(#shirtGrad);
+  stroke: var(--accent-dark);
+  stroke-width: 1;
+  stroke-linejoin: round;
 }
 
 .neck {
-  fill: var(--accent-soft);
-  stroke: var(--accent);
-  stroke-width: 2;
+  fill: url(#neckGrad);
+  stroke: var(--skin-dark);
+  stroke-width: 1;
 }
 
 .head {
-  fill: var(--accent-soft);
-  stroke: var(--accent);
-  stroke-width: 2;
+  fill: url(#headGrad);
+  stroke: var(--skin-dark);
+  stroke-width: 1;
+}
+
+.hair {
+  fill: var(--accent-dark);
+}
+
+.ear {
+  fill: url(#headGrad);
+  stroke: var(--skin-dark);
+  stroke-width: 1;
+}
+
+.eye {
+  fill: #2a2320;
 }
 
 .nose {
-  fill: var(--accent);
+  fill: var(--skin-dark);
+}
+
+.mouth {
+  fill: none;
+  stroke: var(--skin-dark);
+  stroke-width: 1.6;
+  stroke-linecap: round;
 }
 
 .hand {
-  fill: var(--accent-2-soft);
-  stroke: var(--accent-2);
-  stroke-width: 2;
+  fill: url(#warmGrad);
+  stroke: var(--accent-2-dark);
+  stroke-width: 1;
 }
 
 /* Chin tuck: head + neck glide straight back */
@@ -118,8 +145,9 @@
 /* Shoulder rolls: small circular path */
 .shoulder-left-el,
 .shoulder-right-el {
-  fill: var(--accent);
-  opacity: 0.85;
+  fill: url(#accentGrad);
+  stroke: var(--accent-dark);
+  stroke-width: 1;
   animation: shoulder-roll 2.6s ease-in-out infinite;
 }
 @keyframes shoulder-roll {
@@ -140,13 +168,15 @@
 
 /* Scapular retraction: shoulder blades squeeze toward spine */
 .blade-left-el {
-  fill: var(--accent);
-  opacity: 0.85;
+  fill: url(#accentGrad);
+  stroke: var(--accent-dark);
+  stroke-width: 1;
   animation: blade-left 2.4s ease-in-out infinite;
 }
 .blade-right-el {
-  fill: var(--accent);
-  opacity: 0.85;
+  fill: url(#accentGrad);
+  stroke: var(--accent-dark);
+  stroke-width: 1;
   animation: blade-right 2.4s ease-in-out infinite;
 }
 @keyframes blade-left {

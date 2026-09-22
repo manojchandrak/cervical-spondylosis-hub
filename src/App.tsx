@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, Route, Routes, useLocation } from 'react-router-dom'
+import CharacterDefs from './components/CharacterDefs'
 import Home from './views/Home'
 import Exercises from './views/Exercises'
 import Diet from './views/Diet'
@@ -31,6 +32,7 @@ function App() {
 
   return (
     <>
+      <CharacterDefs />
       <header className="site-header">
         <div className="container header-inner">
           <Link to="/" className="brand" onClick={() => setMenuOpen(false)}>

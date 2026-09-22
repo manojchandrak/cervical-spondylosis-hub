@@ -57,6 +57,12 @@
   font-variant-numeric: tabular-nums;
 }
 
+.up-next {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 20px !important;
+}
+
 .player-media {
   display: flex;
   align-items: center;
@@ -66,7 +72,7 @@
   margin: 0 auto;
 }
 
-.player-media .exercise-photo {
+.player-media .exercise-video {
   flex: 1 1 180px;
   max-width: 200px;
 }
@@ -82,7 +88,7 @@
   gap: 12px;
 }
 
-.card-media .exercise-photo {
+.card-media .exercise-video {
   flex: 1 1 50%;
   min-width: 0;
 }
@@ -99,19 +105,13 @@
     flex-direction: column;
   }
 
-  .player-media .exercise-photo,
+  .player-media .exercise-video,
   .player-media .anim-wrap,
-  .card-media .exercise-photo,
+  .card-media .exercise-video,
   .card-media .anim-wrap {
     max-width: 220px;
     width: 100%;
   }
-}
-
-.up-next {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin-bottom: 20px !important;
 }
 
 .player-controls {
