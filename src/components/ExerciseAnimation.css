@@ -59,6 +59,31 @@
   stroke-linecap: round;
 }
 
+.leg {
+  fill: url(#shirtGrad);
+  stroke: var(--accent-dark);
+  stroke-width: 1;
+  stroke-linejoin: round;
+}
+
+.leg.back {
+  opacity: 0.75;
+}
+
+.shoe {
+  fill: #2a2320;
+}
+
+.shoe.back {
+  opacity: 0.75;
+}
+
+.limb-hand {
+  fill: url(#headGrad);
+  stroke: var(--skin-dark);
+  stroke-width: 1;
+}
+
 .hand {
   fill: url(#warmGrad);
   stroke: var(--accent-2-dark);
