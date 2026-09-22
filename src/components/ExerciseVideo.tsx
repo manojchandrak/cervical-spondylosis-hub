@@ -1,4 +1,3 @@
-import chinTuck from '../assets/exercise-videos/chin-tuck.mp4'
 import neckRotation from '../assets/exercise-videos/neck-rotation.mp4'
 import lateralStretch from '../assets/exercise-videos/lateral-stretch.mp4'
 import flexionExtension from '../assets/exercise-videos/flexion-extension.mp4'
@@ -9,7 +8,6 @@ import levatorStretch from '../assets/exercise-videos/levator-stretch.mp4'
 import './ExerciseVideo.css'
 
 const videos: Record<string, string> = {
-  'chin-tuck': chinTuck,
   'neck-rotation': neckRotation,
   'lateral-stretch': lateralStretch,
   'flexion-extension': flexionExtension,

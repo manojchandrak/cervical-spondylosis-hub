@@ -85,6 +85,7 @@
 .card-media {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 12px;
 }
 
@@ -97,6 +98,11 @@
   flex: 1 1 50%;
   min-width: 0;
   padding: 0;
+}
+
+.card-media .anim-wrap:only-child {
+  flex: 0 1 auto;
+  max-width: 200px;
 }
 
 @media (max-width: 520px) {
