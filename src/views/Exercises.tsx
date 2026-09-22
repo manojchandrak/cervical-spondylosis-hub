@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import ExerciseAnimation from '../components/ExerciseAnimation'
+import ExercisePhoto from '../components/ExercisePhoto'
 import './Exercises.css'
 
 interface Exercise {
@@ -193,7 +194,10 @@ export default function Exercises() {
                 {currentExercise.category}
               </span>
               <h3>{currentExercise.name}</h3>
-              <ExerciseAnimation id={currentExercise.id} />
+              <div className="player-media">
+                <ExercisePhoto id={currentExercise.id} />
+                <ExerciseAnimation id={currentExercise.id} />
+              </div>
               <p>{currentExercise.instructions}</p>
               <div className="timer">{secondsLeft}s</div>
               {nextExercise && <p className="up-next">Up next: {nextExercise.name}</p>}
@@ -239,7 +243,10 @@ export default function Exercises() {
                       <h3>{ex.name}</h3>
                       <span className="duration">{ex.seconds}s</span>
                     </div>
-                    <ExerciseAnimation id={ex.id} />
+                    <div className="card-media">
+                      <ExercisePhoto id={ex.id} />
+                      <ExerciseAnimation id={ex.id} />
+                    </div>
                     <p>{ex.instructions}</p>
                   </article>
                 ))}

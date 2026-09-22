@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import ExerciseAnimation from '../components/ExerciseAnimation'
+import ExercisePhoto from '../components/ExercisePhoto'
 import './Home.css'
 
 const features = [
@@ -79,7 +79,7 @@ export default function Home() {
         <div className="container">
           <Link to="/exercises" className="featured card">
             <div className="featured-anim">
-              <ExerciseAnimation id="chin-tuck" />
+              <ExercisePhoto id="chin-tuck" />
             </div>
             <div className="featured-copy">
               <span className="pill">Featured</span>
